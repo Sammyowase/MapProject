@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where in the World?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Where in the world?</h1>
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </header>
+
+    <!-- Search and Filter -->
+    <section class="search-filter">
+        <input type="text" id="search-input" placeholder="Search for a country...">
+        <select id="region-filter">
+            <option value="all">Filter by Region</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+    </section>
+
+    <!-- Main content: Country cards -->
+    <section class="countries-container"></section>
+
+    <!-- Country detail page (hidden by default) -->
+    <section class="country-detail" style="display: none;"></section>
+
+    <script src="app.js"></script>
+</body>
+</html>
